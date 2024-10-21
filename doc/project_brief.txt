@@ -1,0 +1,104 @@
+About this dataset
+This dataset provides a comprehensive look at Airbnb prices in some of the most popular European cities. Each listing is evaluated for various attributes such as room types, cleanliness and satisfaction ratings, bedrooms, distance from the city centre, and more to capture an in-depth understanding of Airbnb prices on both weekdays and weekends. Using spatial econometric methods, we analyse and identify the determinants of Airbnb prices across these cities. Our dataset includes information such as realSum (the total price of the listing), room_type (private/shared/entire home/apt), host_is_superhost (boolean value indicating if host is a superhost or not), multi (indicator whether listing is for multiple rooms or not), biz (business indicator) , guest_satisfaction_overall (overall rating from guests camparing all listings offered by host ), bedrooms, dist (distance from city center) , lng & lat coordinates for location identification etc. We hope that this data set offers insight into how global markets are affected by social dynamics and geographical factors which in turn determine pricing strategies for optimal profitability!
+
+More Datasets
+For more datasets, click here.
+
+Featured Notebooks
+🚨 Your notebook can be here! 🚨!
+How to use the dataset
+This dataset can be used by individuals and companies to gain insight on the cost of Airbnb listings in some of the most popular European cities. It contains information on a variety of attributes such as room type, cleanliness rating, guest satisfaction, distance from the city centre, and more. In addition to exploring general trends in prices across Europe, this dataset can be used for deeper spatial econometric analysis.
+
+To begin using this dataset for your own research or analysis project:
+
+Download the files which contain both weekday and weekend listings data for European cities.
+Familiarize yourself with the columns included in each file; these provide descriptions of various attributes associated with each listing.
+Calculate any desired summary statistics - average price per night per city or room type etc. - using statistical software (e.g Excel).
+Perform spatial econometric analysis if desired; use specialized packages such as spdep or spatialreg in R to identify determinants of Airbnb price levels across Europe (e.g., metro distance).
+Visualize your results with GIS software if necessary to more easily understand patterns between variables like proximity/location and price level (e.g., QGIS).
+By leveraging both descriptive and inferential methods while taking advantage of geographic information systems (GIS), users can apply this dataset to many interesting questions related to rental prices on Airbnb in Europe!
+
+Research Ideas
+Analyzing spatial trends in Airbnb prices across Europe and finding the most favorable cities for hosting.
+Comparing differences between weekday vs weekend booking patterns to project rental rates for vacationers and business travelers in European cities.
+Using spatial econometrics methods to find important determinants of Airbnb prices in order to provide insights into areas of opportunity for improvement, or assess the effectiveness of existing policy changes concerning vacation rentals
+Acknowledgements
+If you use this dataset in your research, please credit the original authors.
+Data Source
+
+License
+License: CC0 1.0 Universal (CC0 1.0) - Public Domain Dedication
+No Copyright - You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information.
+
+Columns
+File: vienna_weekdays.csv
+
+Column name	Description
+realSum	The total price of the Airbnb listing. (Numeric)
+room_type	The type of room being offered (e.g. private, shared, etc.). (Categorical)
+room_shared	Whether the room is shared or not. (Boolean)
+room_private	Whether the room is private or not. (Boolean)
+person_capacity	The maximum number of people that can stay in the room. (Numeric)
+host_is_superhost	Whether the host is a superhost or not. (Boolean)
+multi	Whether the listing is for multiple rooms or not. (Boolean)
+biz	Whether the listing is for business purposes or not. (Boolean)
+cleanliness_rating	The cleanliness rating of the listing. (Numeric)
+guest_satisfaction_overall	The overall guest satisfaction rating of the listing. (Numeric)
+bedrooms	The number of bedrooms in the listing. (Numeric)
+dist	The distance from the city centre. (Numeric)
+metro_dist	The distance from the nearest metro station. (Numeric)
+lng	The longitude of the listing. (Numeric)
+lat	The latitude of the listing. (Numeric)
+File: vienna_weekends.csv
+
+Column name	Description
+realSum	The total price of the Airbnb listing. (Numeric)
+room_type	The type of room being offered (e.g. private, shared, etc.). (Categorical)
+room_shared	Whether the room is shared or not. (Boolean)
+room_private	Whether the room is private or not. (Boolean)
+person_capacity	The maximum number of people that can stay in the room. (Numeric)
+host_is_superhost	Whether the host is a superhost or not. (Boolean)
+multi	Whether the listing is for multiple rooms or not. (Boolean)
+biz	Whether the listing is for business purposes or not. (Boolean)
+cleanliness_rating	The cleanliness rating of the listing. (Numeric)
+guest_satisfaction_overall	The overall guest satisfaction rating of the listing. (Numeric)
+bedrooms	The number of bedrooms in the listing. (Numeric)
+dist	The distance from the city centre. (Numeric)
+metro_dist	The distance from the nearest metro station. (Numeric)
+lng	The longitude of the listing. (Numeric)
+lat	The latitude of the listing. (Numeric)
+Acknowledgements
+If you use this dataset in your research, please credit the original authors.
+If you use this dataset in your research, please credit .
+
+
+
+Quels sont les facteurs les plus déterminants pour le prix total d'une annonce Airbnb (realSum) ?
+Vous pourriez explorer l'impact de variables comme la distance du centre-ville, la capacité d'accueil, le type de chambre (privée, partagée), et la note de propreté sur les prix.
+
+Comment les prix Airbnb varient-ils en fonction de la proximité avec le centre-ville ou le métro ?
+En utilisant les distances (dist, metro_dist), vous pourriez analyser la relation entre la localisation d'une annonce et son prix.
+
+Les hôtes superhosts facturent-ils des prix plus élevés que les hôtes normaux ?
+En comparant les prix entre les annonces d'hôtes superhosts (host_is_superhost) et celles des autres hôtes, vous pourriez examiner si cela affecte les tarifs.
+
+Y a-t-il une différence de prix significative entre les week-ends et les jours de semaine ?
+Vous pourriez comparer les prix entre les listings du week-end et ceux des jours de semaine pour observer les tendances de variation.
+
+Les annonces avec un meilleur score de satisfaction générale (guest_satisfaction_overall) sont-elles plus chères ?
+Vous pourriez analyser la corrélation entre la satisfaction des clients et le prix total pour comprendre si une meilleure satisfaction se traduit par des prix plus élevés.
+
+Quels types de chambres sont les plus rentables (private/shared/entire home)?
+En examinant la variable room_type, vous pourriez déterminer quels types de chambres génèrent les prix les plus élevés.
+
+Existe-t-il une relation entre le nombre de chambres disponibles et le prix total de l'annonce ?
+En utilisant la variable bedrooms, vous pourriez explorer si un plus grand nombre de chambres entraîne un prix plus élevé.
+
+Les annonces destinées aux voyageurs d'affaires (biz) ont-elles des prix différents des autres ?
+Vous pourriez examiner si les annonces marquées comme adaptées aux affaires ont des prix plus élevés ou si elles suivent des tendances similaires aux autres types de logements.
+
+Quelle est la distribution géographique des prix Airbnb dans les villes européennes ?
+En utilisant les coordonnées lng et lat, vous pourriez visualiser la répartition spatiale des prix pour voir s'il y a des zones plus coûteuses que d'autres dans les villes.
+
+Comment les notes de propreté influencent-elles les prix ?
+Vous pourriez analyser si les logements avec une meilleure note de propreté (cleanliness_rating) sont plus chers que ceux avec une note plus basse.
